@@ -1,0 +1,6 @@
+My API key- 6f76aeb469490866bd7b8abf47da5a42
+
+https://home.openweathermap.org/api_keys
+
+Future Plans: Add news and trending songs from the place
+ 
