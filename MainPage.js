@@ -120,12 +120,17 @@ function convertTo12Hour(time24) {
     return `${hour12}:${minuteFormatted} ${period}`;
 }
 
+
+const animationChange=document.getElementById('buttonSideGif');
+
 // Toggle creator box
 document.getElementById('toggleCreatorBox').addEventListener('click', function() {
     const creatorBox = document.getElementById('creatorBox');
     if (creatorBox.style.display === 'none') {
         creatorBox.style.display = 'block';
+        animationChange.src="Animations/love-tank-you.gif"
     } else {
         creatorBox.style.display = 'none';
+        animationChange.src="Animations/pretty-please.gif"
     }
 });
