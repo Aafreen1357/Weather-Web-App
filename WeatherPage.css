@@ -1,0 +1,147 @@
+.custom-gradient {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+}
+
+.creator-custom{
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.outer,
+.middle,
+.inner {
+    border: 3px solid transparent;
+    border-top-color: #4fc3f7;
+    border-right-color: #4fc3f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.outer {
+    width: 3.5em;
+    height: 3.5em;
+    margin-left: -1.75em;
+    margin-top: -1.75em;
+    animation: spin 2s linear infinite;
+}
+
+.middle {
+    width: 2.1em;
+    height: 2.1em;
+    margin-left: -1.05em;
+    margin-top: -1.05em;
+    animation: spin 1.75s linear reverse infinite;
+}
+
+.inner {
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: -0.4em;
+    margin-top: -0.4em;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.weatherBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 900px;
+}
+#metreos-india .weatherBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width:fit-content;
+}
+.weather-info {
+    font-size: 18px;
+    color: #4fc3f7;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#metreos-india .weather-info {
+    font-size: 18px;
+    color: #4fc3f7;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.city-name {
+    font-weight: normal;
+    font-size: xx-large;
+    color: #fff;
+}
+
+#metreos-india .city-name {
+    font-weight: normal;
+    font-size: large;
+    color: #fff;
+}
+.location-info{
+    font-weight: normal;
+    font-size: medium;
+    color: #fff;
+}
+.details {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    color: #e0e0e0;
+}
+
+.icon-box{
+    display: flex;
+    justify-content: center;
+}
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.temp-box{
+    font-size: larger;
+    color: #ffffff;
+}
+#metreos-india .temp-box{
+    display: none;
+}
+
+.social-link {
+    color: #4fc3f7;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-link:hover {
+    color: #3498db;
+    transform: scale(1.2);
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.alert-display{
+    color: red;
+}
