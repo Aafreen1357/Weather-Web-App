@@ -58,7 +58,7 @@ def celsius_to_kelvin(celsius):
 
 @app.route('/')
 def homePage():
-    return render_template('WeatherPage.html')
+    return "Welcome ! Open WeatherPage.html"
 
 @app.route('/weather/<city>')
 def getWether(city):
