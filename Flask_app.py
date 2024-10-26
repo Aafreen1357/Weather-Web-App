@@ -1,4 +1,4 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,render_template
 from flask_cors import CORS
 import requests
 import pyodbc
@@ -58,7 +58,7 @@ def celsius_to_kelvin(celsius):
 
 @app.route('/')
 def homePage():
-    return "This is Home Page"
+    return render_template('WeatherPage.html')
 
 @app.route('/weather/<city>')
 def getWether(city):
